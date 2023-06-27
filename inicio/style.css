@@ -1,0 +1,2278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    background: #f6f9f6;
+     overflow-x: hidden !important;
+}
+header{
+    display: flex;
+    padding: 1rem;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #1c0b64;
+    max-height:200px;
+} 
+nav{
+    display: flex;
+}
+
+.logo h1{
+    text-align: left;
+    left: 0;
+    color: #fff;
+    margin-left: 20px;
+    margin-top:5px;
+    font-family: monospace;
+    font-size: 30px;
+}
+header #search-box{
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    margin-left: 200px;
+}
+#search-box i{
+    color: white;
+    cursor: pointer;
+}
+#search-box input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 3px;
+    color:blue;
+    font-size: 16px;
+    text-align: left;
+    text-indent: 5px;
+}
+#search-box button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: blue;
+    transform: scale(0.9);
+}
+.titulo-lista h1{
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    text-align: right;
+    line-height: 1.7;
+    margin-left: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+.titulo-lista h1:hover{
+    color: rgb(178, 178, 230);
+}
+
+#lista{
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    display: none;
+    
+}
+#lista ul{
+    flex-direction: column;
+}
+#lista a{
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: monospace;
+}
+#lista a:hover{
+    text-decoration: underline;
+}
+.films{
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-left: 50px;
+}
+.films a:hover{
+    color: rgb(178, 178, 230);
+}
+
+.films a:first-child{
+    margin-left: 0;
+}
+.films a{
+  text-decoration: none;
+  color: white;
+  text-align: right;
+  margin-left: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+#compras{
+    margin-top: 8px;
+    text-align: right;
+    right: 0;
+    margin-left: 100px;
+}
+#compras a:hover{
+    color: rgb(178, 178, 230);
+}
+#compras a {
+   text-decoration: none;
+   color: white;
+}
+#bars{
+    display: none;
+}
+@media(max-width:900px){
+   .logo{
+      text-align: left;
+   }
+     .titulo-lista{
+        display: none;
+     }
+     .films{
+      text-align: left;
+      margin-left: 25px;
+      margin-top: 10px;
+      display: none;
+      line-height: 6;
+     }
+     header{
+        max-height: 450px;
+        height: 100%;
+     }
+     nav{
+        flex-direction: column;
+     }
+     #search-box {
+        display: none;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+         left: 0;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         left: 0;
+         right: 0;         
+         bottom: 0;
+         margin-left: 25px;
+         text-align: left;
+     }
+     form{
+        justify-content: center;
+
+        align-items: center;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        margin-left: -10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        margin-left: 25px;
+        text-align: left;
+        margin-left: -180px;
+     }
+     #compras{
+        display: none;
+        line-height: 6;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        margin-left: 25px;
+        text-align: left;
+     }
+     .bars{
+      position: absolute;
+      text-align: right;
+      right: 0;
+      top: 0;
+      margin-right: 50px;
+     }
+     .bars .fa-bars ,.fa-xmark{
+        color: white;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right:0;
+        font-size: 32px;
+        line-height:2.5;
+        text-align: right;
+        justify-content: right; 
+        cursor: pointer;
+     }
+}
+
+
+.container{
+    width: 100%;
+    height: 200px;
+
+}
+.inicio img{
+    width: 100%;
+    height: 500px;
+    
+}
+
+.box{
+    margin-top: 600px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width:350px;
+}
+.first-box{
+     display: flex;
+     border-color: blue;
+     border-style: solid;
+     width: 70vh;
+     height: 20vh;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+      margin-left: -900px;
+      transition: 0.5s;
+}
+.first-box:hover{
+    color: red;
+    background-color: blue;
+}
+.first-box img{
+    width: 50%;
+}
+.cell-titulo{
+    margin-top: 60px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.thue-box{
+    display: flex;
+    border-color: blue;
+    border-style: solid;
+    width: 70vh;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+     margin-left: -300px;
+     transition: 0.5s;
+}
+.thue-box:hover{
+    background-color: blue;
+    color: orangered;
+}
+.tv-titulo{
+    margin-top: 60px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+
+.titulo h1{
+    margin-top: 600px;
+    text-align: left;
+    left: 0;
+    margin-left: 190px;
+    font-size: 20px;
+    font-family: sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    color: gray;
+    text-decoration: none;
+}
+
+
+
+main.cards{
+    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+main.cards section.card{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 5rem;
+    border-radius: 8px;
+    max-height:256px;
+    margin-left:32px ;
+}
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+main.cards section.card .icon{
+     width: 74px;
+     height: 74px;
+}
+main.cards section.card img{
+    width: 120%;
+}
+main.cards section.card h3{
+    font-size: 100%;
+    margin: 16px 0;
+    font-family: 'Poppins', sans-serif;
+}
+main.cards section.card span{
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border:0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight:500 ;
+} 
+main.cards section.card.mas button{
+    background:linear-gradient(to right, red,blue);
+}
+main.cards section.card.mas{
+    box-shadow: 0px 0px 50px -40px blue;
+}
+main.cards section.card.fem{
+    box-shadow: 0px 0px 50px -40px blue;
+}
+main.cards section.card.kids{
+    box-shadow:0px 0px 50px -40px blue;
+}
+@media screen and (max-width:720px){
+    main.cards{
+        flex-direction: column;
+    }
+    main.cards section.card{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    main.cards section.card:last-child{
+        margin-bottom: 0;
+    } 
+}
+
+.background{
+    background: linear-gradient(to right , blue,red);
+    height: 15vh;
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    
+}
+.titulo-countach{
+    color: white;
+    text-align: center;
+    margin: auto;
+    line-height: 3;
+}
+.titulo-countach h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+}
+.titulo-countach span{
+    color: yellow;
+}
+main.produtos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+.imagem img{
+    max-width: 100%;
+}
+
+section.items-1 {
+    max-width: 200px;
+    max-height: 200px;
+}
+section.items-1 h1{
+    font-size: 13px;
+}
+main.produtos section.items-1:first-child{
+    margin-left: 0;
+}
+main.produtos section.items-1{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    height: 300px;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    max-height:360px;
+    margin-left:100px ;
+}
+ .pdr-1{
+    box-shadow:0px 0px 50px -40px blue;
+ }
+ .pdr-2{
+    box-shadow:0px 0px 50px -40px blue;
+ }
+ .pdr-3{
+    box-shadow:0px 0px 50px -40px blue;
+ }
+ .pdr-4{
+    box-shadow:0px 0px 50px -40px blue;
+ }
+ .items-1 p{
+    line-height: 3;
+    color: green;
+ }
+ .items-1{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+ }  
+ main.produtos section.items-1 p2{
+    color: black;
+
+     text-align: center;
+     max-height: 139px;
+     padding: 1rem 3.7rem;
+     border-radius:8px;
+     max-height:420px;
+   }
+  
+ @media screen and (max-width:720px){
+    main.produtos{
+        flex-direction: column;
+    }
+    main.produtos section.items-1{
+         margin-left: 0;
+         margin-bottom:100px;
+         background: white; 
+         padding: 1rem 2rem;
+    }
+    .imagem img{
+        width: 100%;
+    }
+    section.items-1{
+        width: 330px;
+        height:330px;
+    }
+    main.produtos section.items-1 p2{
+        text-align: center;
+        color: black;
+         text-align: center;
+         height: 139px;
+         padding: 1rem 7rem;
+         border-radius:8px;
+         max-height:200px;
+       }
+
+
+ }
+ .doces-titulo{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    text-align: center;
+    padding-top:50px ;
+ }
+ main.tabela{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 50px;
+ }
+section.doces{
+    display: flex;
+}
+.imgs img{
+    max-width: 100%;
+}
+section.doces{
+    width: 200px;
+    height: 200px;
+}
+section.doces h1 ,p1{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+section.doces p1{
+    color: green
+}
+main.tabela section.doces:first-child{
+    margin-left: 0;
+} 
+main.tabela section.doces{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    background:white;
+    height: 300px;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    max-height:360px;
+    margin-left:100px;
+}
+.doce-1{
+    box-shadow:0px 0px 50px -40px blue;
+ }
+ .doce-2{
+    box-shadow:0px 0px 50px -40px blue;
+ }
+ .doce-3{
+    box-shadow:0px 0px 50px -40px blue;
+ }
+ @media screen and (max-width:720px){
+    main.tabela{
+        flex-direction: column;
+    }
+    main.tabela section.doces{
+        margin-left: 0;
+        margin-bottom: 32px;
+        width: 300px;
+        height: 300px;
+    }
+    main.tabela section.doces{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+        background:white;
+        height: 500px;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        max-height:400px;
+    }
+    main.tabela section.doces:last-child{
+        margin-bottom: 0;
+    }
+
+ }  
+ .sliders{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;    
+    margin: auto;
+    margin-left: 270px;
+ }
+  .sliders img:first-child{
+    margin-left:0;
+  }
+  .sliders img{
+    width: 800px;
+    height: 200px;
+  }
+
+  .passar{
+    font-size: 30px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: -120px;
+    text-align: right;
+    margin-right: -280px;
+    color: blue;
+    cursor: pointer;
+    animation: colors 2s ease infinite;
+  }
+  @keyframes colors{
+    0%{
+      color: red;
+    }
+    50%{
+       color: white;
+    }
+    100%{
+        color: blue;
+    }
+  }
+
+  main.card-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 52px;
+    margin-top: -300px;
+  }
+  main.card-2 section.card-produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: blue;
+    padding: 1rem 1rem;
+    border-radius: 90px;
+    max-height:120px;
+    margin-left: 100px;
+  }
+  main.card-2 section.card-produtos .imagem-card{
+    width: 100px;
+    height: 100px;
+  }
+  main.card-2 section.card-produtos:first-child{
+    margin-left: 0;
+  }
+  main.card-2 section.card-produtos img{
+    max-width: 100%;
+  }
+  main.card-2 section.card-produtos h2{
+    font-size: 100%;
+    margin: 16px 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  main.bloco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+  }
+  main.bloco section.frete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    height:500px;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    max-height:400px;
+    margin-left:100px;
+}
+main.bloco section.frete .imagem-bloco{
+    width: 400px;
+    height: 400px;
+}
+main.bloco section.frete .imagem-bloco img{
+    width: 100%;
+}
+main.bloco section.frete:first-child{
+    margin-left: 0;
+}
+main.bloco section.frete h1{
+    font-size: 100%;
+    margin: 16px 0;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+main.bloco .bloco-2{
+    height: 500px;
+    padding: 1.2rem 2rem;
+    width: 400px;
+    border-radius: 8px;
+    max-height:360px;
+    margin-left:100px;
+}
+main.bloco .bloco-2 h1{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    
+}
+main.bloco .bloco-2 img{
+    width: 100%;
+}
+main.bloco .bloco-2  span{
+    color: blue;
+    animation: ponto 2s ease infinite;
+}
+@keyframes ponto{
+    0%{
+      color: red;
+    }
+    50%{
+      color: blue;
+    }
+    100%{
+        color: white;
+    }
+}
+.img1-bloco{
+    box-shadow:0px 0px 50px -20px black;
+}
+.bloco-2{
+    box-shadow:0px 0px 50px -20px black;
+}
+
+main.bloco section.frete .imagem-bloco2{
+    width: 300px;
+    height:300px;
+}
+
+.img-mobile{
+    display: none;
+}
+.background-black{
+    background: url(https://i.ytimg.com/vi/V8dLdTRLKXE/maxresdefault.jpg) !important;
+    width: 150vh;
+    height:59vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow:0px 0px 50px -20px black;
+}
+.academia-img{
+    width:980px ;
+    height:200px ;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.academia-img img{
+    width: 100%;
+    height: 390px;
+    filter: opacity(80%);
+}
+.academia-titulo{
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+main.academia{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 32px;
+}
+main.academia section.academia-items{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 5rem;
+    border-radius: 8px;
+    max-height:300px;
+    margin-left:32px ;
+}
+main.academia section.academia-items .icon-academia{
+    width: 100px;
+    height: 100px;
+}
+section.academia-items .icon-academia img{
+    width: 100%;
+}
+main.academia section.academia-items:first-child{
+    margin-left: 0;
+}
+.academia-1{
+    box-shadow:0px 0px 50px -20px black;
+}
+.academia-2{
+    box-shadow:0px 0px 50px -20px black;
+}
+.preço{
+    color: red;
+    line-height: 4;
+}
+main.academia section.academia-items h3{
+      font-size: 100%;
+      margin: 16px 0;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+}
+@media screen and (max-width:800px){
+    main.academia{
+        flex-direction: column;
+    }
+    main.academia section.academia-items{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+}
+
+#background-black2{
+    background: url(https://i.ytimg.com/vi/V8dLdTRLKXE/maxresdefault.jpg) !important;
+    height: 250vh;
+    box-shadow:0px 0px 200px -20px black;
+}
+.titulo-tec h1{ 
+    color: white;
+    padding: 52px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 30px;
+
+}
+.titulo-tec h2{ 
+    color: BLUE;
+    padding: 52px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 10px;
+}
+main.produtos-tec{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+main.produtos-tec section.tecno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background:linear-gradient( to left, #fff, gray);
+    padding: 1rem 5rem;
+    border-radius: 8px;
+    max-height: 256px;
+    margin-left: 30px;
+    width: 350px;
+}
+main.produtos-tec section.tecno:first-child{
+    margin-left: 0;
+}
+main.produtos-tec section.tecno .imagem-tecno{
+    width: 75px;
+    height: 75px;
+}
+main.produtos-tec section.tecno img{
+    width: 80%;
+}
+.imagem-tec2 img{
+    margin-top: -20px;
+}
+main.produtos-tec section.tecno h1{
+    font-size: 100%;
+    margin: 16px 0;
+    font-family: 'Poppins', sans-serif;
+}
+main.produtos-tec section.tecno p{
+    text-decoration: line-through;
+}
+.tec-card-1{
+    box-shadow:0px 0px 50px -10px blue;
+}
+.tec-card-2{
+    box-shadow:0px 0px 50px -10px blue;
+}
+@media screen and (max-width: 720px){
+
+    main.produtos-tec{
+        flex-direction: column;
+    }
+    main.produtos-tec section.tecno{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    main.produtos section.tecno:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.titulo-gamer h2{
+    color: brown;
+    padding: 102px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 10px;
+}
+
+.titulo-gamer span{
+    color: red;
+}
+.quarto-gamer{
+    width: 800px;
+    height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.quarto-gamer img{
+    width: 100%;
+    height: 300px;
+}
+
+main.led{
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   padding: 200px;
+   margin-top: 100px;
+}
+main.led section.acessorios-led{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  background:linear-gradient(to left , purple , rgba(128, 0, 128, 0.452));
+  padding: 1rem 5rem;
+  border-radius: 8px;
+  max-height: 256px;
+  margin-left: 20px;
+}
+section.acessorios-led .led-img{
+    width: 150px;
+    height: 150px;
+}
+main.led section.acessorios-led:first-child{
+    margin-left: 0;
+}
+main.led section.acessorios-led img{
+    width: 100%;
+}
+main.led section.acessorios-led h1{
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+main.led section.acessorios-led p{
+    text-decoration: line-through;
+    color: white;
+}
+main.led section.acessorios-led p1{
+    color: white;
+}
+@media screen and (max-width: 720px){
+    main.led{
+        flex-direction: column;
+    }
+    main.led section.acessorios-led{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    main.led section.acessorios-let:last-child{
+        margin-bottom: 0;
+    }
+    #background-black2{
+        background: url(https://i.ytimg.com/vi/V8dLdTRLKXE/maxresdefault.jpg);
+        height: 350vh;
+        box-shadow:0px 0px 200px -20px black;
+    }
+
+}
+
+#imagens{
+  width: 100%;
+
+  transition: 2s;
+  
+}
+#imagens img{
+  width: 100%;
+  transition: 2s;
+}
+.slider{
+    transition: 2s;
+}
+footer{
+    margin-top: -5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     padding: 25px;
+     background-color: #1c0b64;
+
+}
+.links{
+    display: flex;
+}
+ .items:first-child{
+    margin-left: 0;
+}
+ul{
+    flex-direction: column;
+    margin-left: 150px;
+    text-align: left;
+}
+.items{
+    flex-direction: column;
+    font-size: 32px;
+    margin-top: 50px;
+}
+.items h1{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.items a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #f6f9f6;
+    font-family: sans-serif;
+}
+.items a:hover{
+    text-decoration: underline;
+}
+.logo-footer h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color:gray;
+   cursor: pointer;
+   text-decoration:underline;
+   font-size: 20px;
+}
+.copyright{
+      text-align: center;
+    justify-content: center;
+     align-items: center;
+    color: gainsboro;
+    line-height: 4;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+.git a{
+    color: antiquewhite;
+    font-size: 30px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+@media(min-width:320px) and (max-width:500px){
+     #seta{
+        display: none;
+     }
+     .inicio-texto h1{
+        display: none;
+     }
+     .inicio{
+        display: none;
+     }
+     .img-mobile {
+        display: flex;
+        width: 100%;
+     }
+     .img-mobile img{
+        width: 100%;
+     }
+     .box{
+        display: none;
+     }
+     .titulo{
+        margin-top: -800px;
+     }
+     .first-box{
+        margin-left: 200px;
+        margin-top:0px;
+        width: 100px;
+        height:100px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        margin-left: 30px;
+        border-color: red;
+        border-style: solid;
+        width: 320px;
+        margin-top: 20px;
+    }
+    .first-box img{
+        width: 40%;
+    }
+    .first-box h2{
+        font-size: 25px;
+    }
+    .box:first-child{
+        margin-left: 0;
+    }
+    .cell-titulo{
+        margin-left: -20px;
+        font-size: 17px;
+    }
+     .thue-box{
+        margin-left: 200px;
+        margin-top: 0px;
+        width: 100px;
+        height:100px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        margin-left: 30px;
+        border-color: red;
+        border-style: solid;
+        width: 320px;
+        margin-top: 150px;
+     }
+     .titulo{
+        text-align: left;
+    }
+     .titulo h1{
+        text-align: left;
+        margin-bottom: 40px;
+        line-height: 4;
+        justify-content: left;
+        font-size: 23px;
+        margin-left: 50px;
+     }
+     .background{
+        width: 100%;
+        height: 100%;
+     }
+     .titulo-countach{
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+     }
+     .titulo-countach h1{
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        line-height: 5;
+     }
+     .sliders{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: none;
+     }
+     .slider img{
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+
+     }
+     .sliders #figura{
+        width: 100%;
+     }
+     .passar p{
+        color: red;
+        text-align: center;
+        font-size: 30px;
+     }
+     main.card-2{
+        flex-direction: column;
+        margin-top: 0px;
+     }
+     main.card-2 section.card-produtos{
+        margin-left: 0;
+        margin-bottom: 52px;
+     }
+     main.card-2 section.card-produtos:last-child{
+        margin-bottom: 0;
+     }
+     main.bloco{
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+     }
+     main.bloco section.frete{
+        margin-left: 0;
+        margin-bottom: 32px;
+        max-width: 100%;
+        overflow: hidden;
+     }
+     .img1-bloco{
+        width: 100%;
+     }
+     .imagem-bloco img{
+        width: 100%;
+        margin-left: 0;
+     }
+     .background-black{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+     }
+     .doces-titulo{
+        margin-top: -100px;
+     }
+     .academia-img{
+        width: 100%;
+     }
+     .academia-img img{
+        width: 100%;
+     }
+     .titulo-tec h2{
+        text-align: center;
+        width: 100%;
+        color: yellow;
+         font-size: 30px;
+     }
+     main.produtos-tec{
+        width: 100%;
+     }
+     main.produtos-tec section.tecno{
+        flex-direction: column;
+        margin-top: 0px;
+        text-align: center !important;
+     }
+     section.tecno .imagem-tecno img{
+        max-width: 100%;
+     }
+     .imagem-tec2{
+        max-width: 80%;
+     }
+
+     .titulo-gamer{
+        width: 100%;
+        text-align: center;
+        margin-top: -20px;
+     }
+     .quarto-gamer{
+        width: 100%;
+     }
+     .quarto-gamer img{
+        width: 100%;
+     }
+     #background-black2{
+        height:100vh;
+        width: 100%;
+        height: 100%;
+        background:black !important;
+     }
+     .led-img{
+        width: 100%;
+        margin-top: -20px;
+     }
+     .img-note{
+        width: 80%;
+        margin-top: 0px;
+     }
+     main.led section.acessorios-led{
+        margin-top: 0px;
+        text-align: center !important;
+        margin-left: 0px;
+        flex-direction: column;
+     }
+     main.led section.acessorios-led .mesa-led img{
+        max-width: 90%;
+        margin-top: 0px;
+     }
+     .slider{
+        width: 100%;
+        height: 100%;
+       margin-top: -150px;
+     }
+     footer{
+        display: block;
+        text-align: center;
+        margin-top: 0px;
+
+     }
+     .links{
+        display: block;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+     }
+     .items{
+        text-align: center;
+     }
+     .items h1{
+        text-align: center;
+     }
+     .items ul{
+        text-align: center;
+        margin-left: 0;
+     }
+}
+
+
+@media(min-width:500px) and (max-width:719px){
+    #seta{
+       display: none;
+    }
+    .inicio{
+       display: none;
+    }
+    .img-mobile{
+        display: flex;
+    }
+    .img-mobile img{
+        width: 100%;
+    }
+    .inicio-texto h1{
+       width: 100%;
+       margin-top: 50px;
+       font-size: 40px;  
+    }
+    .box{
+        margin-top: 300px;
+       flex-direction: column;
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       margin-left: 70px;
+       position: absolute;
+       display: none;
+    }
+    .first-box{
+       margin-left: 200px;
+       margin-top: 0px;
+       width: 120px;
+       height:100px;
+       text-align: center;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       margin: auto;
+       margin-left: 30px;
+       border-color: red;
+       border-style: solid;
+       width: 350px;
+       margin-top: 20px;
+       font-size: 20px;
+   }
+   .first-box img{
+       width: 40%;
+   }
+   .cell-titulo{
+       margin-left: -20px;
+       font-size: 17px;
+   }
+    .thue-box{
+       margin-left: 200px;
+       margin-top: 0px;
+       width: 100px;
+       height:100px;
+       text-align: center;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       margin: auto;
+       margin-left: 30px;
+       border-color: red;
+       border-style: solid;
+       width: 350px;
+       margin-top: 150px;
+    }
+    .titulo{
+       text-align: left;
+       margin-top: -750px;
+   }
+    .titulo h1{
+       text-align: left;
+       margin-bottom: 40px;
+       line-height: 4;
+       justify-content: left;
+       font-size: 23px;
+       margin-left: 120px;
+    }
+    .doces-titulo{
+        margin-top: -100px;
+    }
+    .background{
+       overflow: hidden;
+       width: 100%;
+    }
+    .titulo-countach{
+       width: 100%;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+    }
+    .titulo-countach h1{
+       width: 100%;
+       text-align: center;
+       font-size: 22px;
+       line-height: 5;
+    }
+    .sliders{
+       overflow: hidden;
+       margin-left: 0;
+       width: 100%;
+    }
+    .slider img{
+     width: 100%;
+    }
+    .sliders #figura{
+       width: 100%;
+    }
+    .passar p{
+       color: red;
+       text-align:center;
+       margin-left: 150px;
+       font-size: 30px;
+    }
+    main.card-2{
+       flex-direction: column;
+       padding: auto;
+    }
+    main.card-2 section.card-produtos{
+       margin-left: 0;
+       margin-bottom: 52px;
+       
+    }
+    main.card-2 section.card-produtos:last-child{
+       margin-bottom: 0;
+    }
+    main.bloco{
+       flex-direction: column;
+       max-width: 100%;
+       overflow: hidden;
+    }
+    main.bloco section.frete{
+       margin-left: 0;
+       margin-bottom: 32px;
+       width: 100%;
+       overflow: hidden;
+    }
+    .img1-bloco{
+       max-width: 100%;
+
+    }
+    .imagem-bloco img{
+       max-width: 100%;
+       margin-left: 0;
+
+    }
+    .background-black{
+       overflow-y: hidden;
+       width: 100%;
+       height: 100%;
+    }
+    .academia-img{
+       width: 100%;
+    }
+    .academia-img img{
+       width: 100%;
+    }
+    .titulo-tec h2{
+       text-align: center;
+       width: 100%;
+       color: yellow;
+        font-size: 30px;
+    }
+    main.produtos-tec{
+       width: 100%;
+    }
+    .titulo-gamer{
+       width: 100%;
+       text-align: center;
+       margin-top: -20px;
+    }
+    .quarto-gamer{
+       width: 100%;
+    }
+    .quarto-gamer img{
+       width: 100%;
+    }
+    #background-black2{
+       height: 250vh;
+       width: 100%;
+       height: 100%;
+       background: black !important;
+    }
+    .led-img{
+       width: 100%;
+       margin-top: -20px;
+    }
+    .tec-card-1 img{
+       max-width: 70%  !important;
+       
+    }
+    .slider{
+       width: 100%;
+      margin-top: -20px;
+    }
+    footer{
+       display: block;
+       text-align: center;
+    }
+    .links{
+       display: block;
+       text-align: center;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       margin: auto;
+    }
+    .items{
+       text-align: center;
+    }
+    .items h1{
+       text-align: center;
+    }
+    .items ul{
+       text-align: center;
+       margin-left: 0;
+    }
+}
+
+@media(min-width:720px) and (max-width:899px){
+    #seta{
+       display: none;
+    }
+    .inicio{
+       display: none;
+    }
+    .img-mobile{
+        display: flex;
+    }
+    .img-mobile img{
+        width: 100%;
+    }
+    .inicio-texto h1{
+       width: 100%;
+       margin-top: 50px;
+       font-size: 40px;  
+    }
+    .box{
+        margin-top: 300px;
+       flex-direction: column;
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       display: none;
+       margin-left: 70px;
+       position: absolute;
+    }
+    .first-box{
+       margin-left: 200px;
+       margin-top: 0px;
+       width: 120px;
+       height:100px;
+       text-align: center;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       margin: auto;
+       margin-left: 30px;
+       border-color: red;
+       border-style: solid;
+       width: 350px;
+       margin-top: 20px;
+       font-size: 20px;
+   }
+   .first-box img{
+       width: 40%;
+   }
+   .cell-titulo{
+       margin-left: -20px;
+       font-size: 17px;
+   }
+    .thue-box{
+       margin-left: 200px;
+       margin-top: 0px;
+       width: 100px;
+       height:100px;
+       text-align: center;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       margin: auto;
+       margin-left: 30px;
+       border-color: red;
+       border-style: solid;
+       width: 350px;
+       margin-top: 150px;
+    }
+    .titulo{
+       text-align: left;
+       margin-top: -750px;
+   }
+    .titulo h1{
+       text-align: left;
+       margin-bottom: 40px;
+       line-height: 4;
+       justify-content: left;
+       font-size: 23px;
+       margin-left: 120px;
+    }
+    .doces-titulo{
+        margin-top: -100px;
+    }
+    .background{
+       overflow: hidden;
+       width: 100%;
+    }
+    .titulo-countach{
+       width: 100%;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+    }
+    .titulo-countach h1{
+       width: 100%;
+       text-align: center;
+       font-size: 22px;
+       line-height: 5;
+    }
+    main.produtos{
+        flex-direction: column;
+    }
+    main.produtos section.items-1{
+         margin-left: 0;
+         margin-bottom:100px;
+         background: white; 
+         padding: 1rem 2rem;
+    }
+    .imagem img{
+        width: 100%;
+    }
+    section.items-1{
+        width: 350px;
+        height:350px;
+    }
+    main.produtos section.items-1 p2{
+        text-align: center;
+        color: black;
+         text-align: center;
+         height: 139px;
+         padding: 1rem 7rem;
+         border-radius:8px;
+         max-height:200px;
+       }
+    
+    .sliders{
+       margin-left: 0;
+       width: 100%;
+    }
+    .slider img{
+     width: 100%;
+    }
+    .sliders #figura{
+       width: 100%;
+    }
+    .passar p{
+       color: red;
+       text-align: center;
+       margin-left: 200px;
+       font-size: 30px;
+    }
+
+    main.card-2 section.card-produtos{
+       margin-left: 10px;
+
+    }
+    main.card-2 section.card-produtos:last-child{
+       margin-bottom: 0;
+    }
+    main.bloco{
+       flex-direction: column;
+       width: 100%;
+       overflow: hidden;
+    }
+    main.bloco section.frete{
+       margin-left: 0;
+       margin-bottom: 32px;
+       width: 100%;
+       overflow: hidden;
+    }
+    .img1-bloco{
+       width: 100%;
+    }
+    .imagem-bloco img{
+       width: 100%;
+       margin-left: 0;
+
+    }
+    .background-black{
+       overflow-y: hidden;
+       width: 100%;
+       height: 100%;
+    }
+    .academia-img{
+       width: 100%;
+    }
+    .academia-img img{
+       width: 100%;
+    }
+    .titulo-tec h2{
+       text-align: center;
+       width: 100%;
+       color: yellow;
+        font-size: 30px;
+    }
+    main.produtos-tec{
+       width: 100%;
+    }
+    .titulo-gamer{
+       width: 100%;
+       text-align: center;
+       margin-top: -20px;
+    }
+    .quarto-gamer{
+       width: 100%;
+    }
+    .quarto-gamer img{
+       width: 100%;
+    }
+    #background-black2{
+       height: 200vh;
+       width: 100%;
+       height: 100% !important;
+    }
+    .led-img{
+       width: 100%;
+       margin-top: -20px;
+    }
+    .slider{
+       width: 100%;
+      margin-top: 1px;
+      display: none;
+    }
+    footer{
+       display: block;
+       text-align: center;
+    }
+    .links{
+       display: block;
+       text-align: center;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       margin: auto;
+    }
+    .items{
+       text-align: center;
+    }
+    .items h1{
+       text-align: center;
+    }
+    .items ul{
+       text-align: center;
+       margin-left: 0;
+    }
+}
+
+
+
+@media(min-width:900px) and (max-width:999px){
+    #seta{
+       display: none;
+    }
+    .inicio{
+       display: none;
+    }
+    .titulo-lista{
+        display: none;
+    }
+    #search-box input{
+        text-align: center;
+        margin-left:-190px;
+    }
+    .img-mobile{
+        display: flex;
+    }
+    .img-mobile img{
+        width: 100%;
+    }
+    .inicio-texto h1{
+       width: 100%;
+       margin-top: 50px;
+       font-size: 40px;  
+    }
+    .box{
+        margin-top: 300px;
+       flex-direction: column;
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       display: none;
+       margin-left: 70px;
+       position: absolute;
+    }
+    .first-box{
+       margin-left: 200px;
+       margin-top: 0px;
+       width: 120px;
+       height:100px;
+       text-align: center;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       margin: auto;
+       margin-left: 30px;
+       border-color: red;
+       border-style: solid;
+       width: 350px;
+       margin-top: 20px;
+       font-size: 20px;
+   }
+   .first-box img{
+       width: 40%;
+   }
+   .cell-titulo{
+       margin-left: -20px;
+       font-size: 17px;
+   }
+    .thue-box{
+       margin-left: 200px;
+       margin-top: 0px;
+       width: 100px;
+       height:100px;
+       text-align: center;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       margin: auto;
+       margin-left: 30px;
+       border-color: red;
+       border-style: solid;
+       width: 350px;
+       margin-top: 150px;
+    }
+    .titulo{
+       text-align: left;
+       margin-top: -750px;
+   }
+    .titulo h1{
+       text-align: left;
+       margin-bottom: 40px;
+       line-height: 4;
+       justify-content: left;
+       font-size: 23px;
+       margin-left: 120px;
+    }
+    .titulo-countach h1{
+        font-size: 30px !important;
+        text-align: center !important;
+    }
+    .doces-titulo{
+        margin-top: -100px;
+    }
+    .background{
+       overflow: hidden;
+       width: 100%;
+    }
+    .titulo-countach{
+       width: 100%;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+    }
+    .titulo-countach h1{
+       width: 100%;
+       text-align: center;
+       font-size: 22px;
+       line-height: 5;
+    }
+
+    main.produtos section.items-1{
+         margin-left: 0;
+         margin-bottom:100px;
+         background: white; 
+         padding: 1rem 2rem;
+         margin-left: 30px;
+    }
+    .imagem img{
+        width: 100%;
+    }
+    section.items-1{
+        width: 350px;
+        height:350px;
+        
+    }
+    main.produtos section.items-1 p2{
+        text-align: center;
+        color: black;
+         text-align: center;
+         height: 139px;
+         padding: 1rem 7rem;
+         border-radius:8px;
+         max-height:200px;
+       }
+    
+    .sliders{
+       margin-left: 0;
+       width: 100%;
+    }
+    .slider img{
+     width: 100%;
+    }
+    .sliders #figura{
+       width: 100%;
+    }
+    .passar p{
+       color: red;
+       text-align: center;
+       margin-left: 500px;
+       font-size: 50px !important;
+    }
+    main.card-2 section.card-produtos{
+       margin-left: 30px;
+    }
+    main.card-2 section.card-produtos:last-child{
+       margin-bottom: 0;
+    }
+    main.bloco{
+       flex-direction: column;
+       width: 100%;
+       overflow: hidden !important;
+    }
+    main.bloco section.frete{
+       margin-left: 0;
+       margin-bottom: 32px;
+       max-width: 100% !important;
+       overflow: hidden;
+    }
+    .img1-bloco{
+       width: 50% !important;
+       height: 100% !important;
+    }
+    .imagem-bloco img{
+       width: 100%;
+       margin-left: 0;
+
+    }
+    .background-black{
+       overflow-y: hidden;
+       width: 100%;
+       height: 100%;
+    }
+    .academia-img{
+       width: 100%;
+    }
+    .academia-img img{
+       width: 100%;
+    }
+    .titulo-tec h2{
+       text-align: center;
+       width: 100%;
+       color: yellow;
+        font-size: 30px;
+    }
+    main.produtos-tec{
+       width: 100%;
+    }
+    .titulo-gamer{
+       width: 100%;
+       text-align: center;
+       margin-top: -20px;
+    }
+    .quarto-gamer{
+       width: 100%;
+    }
+    .quarto-gamer img{
+       width: 100%;
+    }
+    #background-black2{
+       height: 170vh !important;
+       width: 100%;
+       background:black !important;
+       height: 100% !important;
+    }
+    .led-img{
+       width: 100%;
+       margin-top: -20px;
+    }
+    .slider{
+       width: 100%;
+      margin-top: 1px;
+    }
+    footer{
+       display: block;
+       text-align: center;
+    }
+    .links{
+       display: block;
+       text-align: center;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       margin: auto;
+    }
+    .items{
+       text-align: center;
+    }
+    .items h1{
+       text-align: center;
+    }
+    .items ul{
+       text-align: center;
+       margin-left: 0;
+    }
+}
+
+
+
+@media(min-width:1000px) and (max-width:1240px){
+    .inicio{
+        display: none;
+    }
+    .img-mobile{
+        display: flex;
+    }
+    .img-mobile img{
+        width: 100%;
+    }
+     .titulo-lista{
+        display: none;
+     }
+     #search-box input{
+        margin-left: -100px;
+        text-align: center;
+     }
+     #compras{
+        margin-left: 40px;
+        text-align: right;
+     }
+    .inicio-texto h1{
+       width: 100%;
+       margin-top: 50px;
+       font-size: 40px;
+    }
+    .box{
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        margin-left:80px ;
+        margin-top: 500px;
+    }
+    .first-box{ 
+        width: 360px;
+        height: 100px;
+        margin-left:50px;
+       }
+       .first-box img{
+        width: 40%;
+       }
+       .thue-box{
+        width: 350px;
+        height: 100px;
+        margin-left: 450px;
+       }
+    .titulo{
+       text-align: left;
+       margin-top: -500px;
+   }
+   main.produtos section.items-1{
+    margin-left: 30px;
+   }
+    .titulo h1{
+       text-align: left;
+       margin-bottom: 40px;
+       line-height: 4;
+       justify-content: left;
+       font-size: 23px;
+       margin-left: 120px;
+    }
+    .doces-titulo{
+        margin-top: 00px;
+    }
+    .background{
+       overflow: hidden;
+       width: 100%;
+    }
+    .titulo-countach{
+       width: 100%;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+    }
+    .titulo-countach h1{
+       width: 100%;
+       text-align: center;
+       font-size: 22px;
+       line-height: 5;
+    }
+    .sliders{
+       overflow: hidden;
+       margin-left: 0;
+       width: 100%;
+    }
+    .slider img{
+     width: 100%;
+    }
+    .sliders #figura{
+       width: 100%;
+    }
+    .passar p{
+       color: red;
+       text-align:center;
+       margin-left: 500px;
+       font-size: 50px;
+    }
+    main.card-2 section.card-produtos{
+       margin-left: 30px;
+       margin-bottom: 0px;
+    }
+
+    main.bloco section.frete{
+       margin-left:9px;
+       margin-bottom: 32px;
+       width: 100%;
+       overflow: hidden;
+    }
+    .img1-bloco{
+       width: 100%;
+    }
+    .imagem-bloco img{
+       width: 100%;
+       margin-left: 0;
+
+    }
+    .background-black{
+       overflow-y: hidden;
+       width: 100%;
+       height: 100%;
+    }
+    .academia-img{
+       width: 100%;
+    }
+    .academia-img img{
+       width: 100%;
+    }
+    .titulo-tec h2{
+       text-align: center;
+       width: 100%;
+       color: yellow;
+        font-size: 30px;
+    }
+    main.produtos-tec{
+       width: 100%;
+    }
+    .titulo-gamer{
+       width: 100%;
+       text-align: center;
+       margin-top: -20px;
+    }
+    .quarto-gamer{
+       width: 100%;
+    }
+    .quarto-gamer img{
+       width: 100%;
+    }
+    #background-black2{
+       height: 170vh !important;
+       width: 100%;
+       background: black !important;
+       height: 100% !important;
+    }
+    .led-img{
+       width: 100%;
+       margin-top: -20px;
+    }
+    .slider{
+       width: 100%;
+      margin-top: 1px;
+    }
+    .slider img{
+       width: 100%;
+       height: 100%;
+    }
+    footer{
+       display: block;
+       text-align: center;
+       height: 87vh;
+    }
+    .links{
+       display: block;
+       text-align: center;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       margin: auto;
+    }
+    .items{
+       text-align: center;
+    }
+    .items h1{
+       text-align: center;
+    }
+    .items ul{
+       text-align: center;
+       margin-left: 0;
+    }
+}
